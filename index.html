@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Демонтаж Київ — швидкий демонтаж будь-якої складності</title>
+  <meta name="description" content="Демонтаж стін, перегородок, підлог, стель, вікон, дверей у Києві. Виїзд майстра, демократичні ціни. Телефонуйте +380973058344">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1a2e;background:#fff;line-height:1.6}
+    .container{max-width:1140px;margin:0 auto;padding:0 20px}
+    /* Hero */
+    .hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;padding:80px 0 60px;text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600&q=80') center/cover;opacity:.12}
+    .hero .container{position:relative;z-index:1}
+    .hero h1{font-size:2.8rem;font-weight:800;margin-bottom:16px}
+    .hero h1 span{color:#e94560}
+    .hero p{font-size:1.2rem;max-width:650px;margin:0 auto 30px;opacity:.9}
+    .hero-phone{display:inline-block;background:#e94560;color:#fff;font-size:1.5rem;font-weight:700;padding:16px 40px;border-radius:50px;text-decoration:none;transition:.3s}
+    .hero-phone:hover{background:#d63851;transform:scale(1.03)}
+    .hero-sub{margin-top:16px;font-size:.9rem;opacity:.7}
+    /* Sections */
+    section{padding:70px 0}
+    h2{text-align:center;font-size:2rem;margin-bottom:50px;position:relative}
+    h2::after{content:'';display:block;width:60px;height:4px;background:#e94560;margin:12px auto 0;border-radius:2px}
+    .bg-light{background:#f8f9fa}
+    /* Services */
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+    .service-card{background:#fff;border-radius:16px;padding:30px 25px;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:.3s;border:1px solid #eee}
+    .service-card:hover{transform:translateY(-5px);box-shadow:0 8px 30px rgba(0,0,0,.12);border-color:#e94560}
+    .service-icon{font-size:2.5rem;margin-bottom:15px}
+    .service-card h3{font-size:1.15rem;margin-bottom:10px}
+    .service-card p{font-size:.9rem;color:#555}
+    /* Features */
+    .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
+    .feature-item{text-align:center;padding:25px}
+    .feature-icon{font-size:2.8rem;margin-bottom:12px}
+    .feature-item h4{font-size:1rem;margin-bottom:8px}
+    .feature-item p{font-size:.85rem;color:#555}
+    /* Steps */
+    .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;counter-reset:step}
+    .step{text-align:center;padding:25px 15px;position:relative}
+    .step-num{width:50px;height:50px;line-height:50px;border-radius:50%;background:#e94560;color:#fff;font-size:1.3rem;font-weight:700;margin:0 auto 15px}
+    .step h4{margin-bottom:8px}
+    .step p{font-size:.85rem;color:#555}
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px;transition:.3s}
+    .gallery img:hover{transform:scale(1.02);box-shadow:0 4px 15px rgba(0,0,0,.15)}
+    /* Price */
+    .price-note{text-align:center;font-size:1.1rem;max-width:600px;margin:0 auto}
+    .price-note strong{color:#e94560}
+    .price-btn{display:inline-block;background:#1a1a2e;color:#fff;padding:14px 36px;border-radius:50px;text-decoration:none;font-weight:600;margin-top:20px;transition:.3s}
+    .price-btn:hover{background:#0f3460;transform:scale(1.02)}
+    /* Contact */
+    .contact-flex{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;align-items:center}
+    .contact-card{background:#1a1a2e;color:#fff;padding:40px;border-radius:20px;text-align:center;flex:1;min-width:280px;max-width:450px}
+    .contact-card a{color:#e94560;text-decoration:none}
+    .contact-card a:hover{text-decoration:underline}
+    .contact-card .big-phone{font-size:1.8rem;font-weight:700;display:block;margin:15px 0;color:#fff}
+    .contact-card .big-phone:hover{color:#e94560;text-decoration:none}
+    .contact-card p{margin-bottom:8px;opacity:.9}
+    .contact-info{flex:1;min-width:280px;max-width:450px}
+    .contact-info p{margin-bottom:10px;font-size:1rem}
+    /* Form */
+    .form-wrap{max-width:520px;margin:0 auto}
+    .form-wrap input,.form-wrap textarea,.form-wrap select{width:100%;padding:14px 18px;border:2px solid #ddd;border-radius:10px;font-size:1rem;margin-bottom:14px;transition:.3s;font-family:inherit}
+    .form-wrap input:focus,.form-wrap textarea:focus,.form-wrap select:focus{border-color:#e94560;outline:none}
+    .form-wrap textarea{height:120px;resize:vertical}
+    .form-wrap button{width:100%;padding:16px;background:#e94560;color:#fff;border:none;border-radius:10px;font-size:1.1rem;font-weight:700;cursor:pointer;transition:.3s}
+    .form-wrap button:hover{background:#d63851}
+    /* Footer */
+    footer{background:#1a1a2e;color:#999;text-align:center;padding:25px 0;font-size:.85rem}
+    footer a{color:#e94560;text-decoration:none}
+    /* Mobile */
+    @media(max-width:768px){
+      .hero h1{font-size:2rem}
+      .hero p{font-size:1rem}
+      .hero-phone{font-size:1.2rem;padding:14px 30px}
+      h2{font-size:1.6rem}
+      section{padding:50px 0}
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Демонтаж <span>Київ</span></h1>
+    <p>Професійний демонтаж стін, перегородок, підлог, стель, вікон та дверей. Швидко, акуратно, з вивозом сміття.</p>
+    <a href="tel:+380973058344" class="hero-phone">📞 +38 (097) 305-83-44</a>
+    <div class="hero-sub">Працюємо по Києву та області • Безкоштовний виїзд оцінювача</div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section>
+  <div class="container">
+    <h2>Наші послуги</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🧱</div>
+        <h3>Демонтаж стін та перегородок</h3>
+        <p>Цегляні, бетонні, гіпсокартонні — будь-якої товщини та складності</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🪚</div>
+        <h3>Демонтаж підлог та стяжки</h3>
+        <p>Паркет, плитка, бетонна стяжка, ламінат — повне видалення</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏗️</div>
+        <h3>Демонтаж стель</h3>
+        <p>Натяжні, підвісні, гіпсокартонні, бетонні перекриття</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🪟</div>
+        <h3>Демонтаж вікон та дверей</h3>
+        <p>Дерев'яні, металопластикові, алюмінієві, вхідні та міжкімнатні</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🚿</div>
+        <h3>Демонтаж сантехніки та плитки</h3>
+        <p>Ванни, унітази, раковини, кахель — акуратний демонтаж</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🗑️</div>
+        <h3>Вивезення та утилізація сміття</h3>
+        <p>Мішки, контейнери, вивіз на полігон — без зайвого клопоту</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="bg-light">
+  <div class="container">
+    <h2>Чому обирають нас</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">⏱️</div>
+        <h4>Швидко</h4>
+        <p>Виїзд у день звернення. Працюємо без вихідних</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🤝</div>
+        <h4>Акуратно</h4>
+        <p>Захищаємо суміжні поверхні, мінімум пилу та бруду</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">💰</div>
+        <h4>Прозорі ціни</h4>
+        <p>Фіксована вартість без прихованих доплат</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📄</div>
+        <h4>Договір</h4>
+        <p>Працюємо офіційно. Гарантія на виконані роботи</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section>
+  <div class="container">
+    <h2>Як ми працюємо</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Дзвінок</h4>
+        <p>Ви телефонуєте та описуєте задачу</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Оцінка</h4>
+        <p>Безкоштовний виїзд та розрахунок вартості</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Демонтаж</h4>
+        <p>Виконуємо роботи акуратно та швидко</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Прибирання</h4>
+        <p>Вивозимо сміття, залишаємо чистоту</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="bg-light">
+  <div class="container">
+    <h2>Фото робіт</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Демонтаж стіни" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&q=80" alt="Ремонт квартири" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1584622780390-646a2232b04d?w=600&q=80" alt="Будівельне сміття" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1590588268317-4990642a4de2?w=600&q=80" alt="Інструменти" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="Будівництво" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1565008447742-97f6a30c6b7a?w=600&q=80" alt="Знесення перегородки" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section>
+  <div class="container">
+    <h2>Вартість</h2>
+    <div class="price-note">
+      <p>Ціна залежить від об'єму та складності робіт. <strong>Мінімальне замовлення — від 1000 грн.</strong></p>
+      <p style="margin-top:12px;color:#555">Телефонуйте — прорахуємо вартість за 5 хвилин</p>
+      <a href="tel:+380973058344" class="price-btn">📞 Зателефонувати</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="bg-light">
+  <div class="container">
+    <h2>Контакти</h2>
+    <div class="contact-flex">
+      <div class="contact-card">
+        <p>📞 Телефон</p>
+        <a href="tel:+380973058344" class="big-phone">+38 (097) 305-83-44</a>
+        <p style="margin-top:10px">✉️ Telegram / Viber — той самий номер</p>
+        <p style="margin-top:6px">📍 Київ та Київська область</p>
+        <p style="margin-top:12px;font-size:.8rem;opacity:.6">Пн-Нд: 8:00 — 20:00</p>
+      </div>
+      <div class="contact-info">
+        <p><strong>Залишилися питання?</strong></p>
+        <p>Зателефонуйте або залиште заявку — передзвонимо за 5 хвилин</p>
+        <p style="margin-top:10px">✅ Безкоштовна консультація</p>
+        <p>✅ Виїзд майстра на об'єкт</p>
+        <p>✅ Розрахунок кошторису</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section>
+  <div class="container">
+    <h2>Залишити заявку</h2>
+    <div class="form-wrap">
+      <form id="leadForm">
+        <input type="text" name="name" placeholder="Ваше ім'я" required>
+        <input type="tel" name="phone" placeholder="+38 (0__) ___-__-__" required>
+        <select name="service">
+          <option value="">— Оберіть послугу —</option>
+          <option>Демонтаж стін та перегородок</option>
+          <option>Демонтаж підлоги/стяжки</option>
+          <option>Демонтаж стелі</option>
+          <option>Демонтаж вікон/дверей</option>
+          <option>Демонтаж сантехніки/плитки</option>
+          <option>Комплексний демонтаж</option>
+          <option>Інше</option>
+        </select>
+        <textarea name="message" placeholder="Коротко опишіть об'єм робіт (необов'язково)"></textarea>
+        <button type="submit">📩 Відправити заявку</button>
+      </form>
+      <div id="formSuccess" style="display:none;text-align:center;padding:30px;background:#e8f5e9;border-radius:12px;color:#2e7d32;font-size:1.1rem">
+        ✔ Заявка відправлена! Передзвонимо протягом 5 хвилин.
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 <a href="#">Демонтаж Київ</a> | +38 (097) 305-83-44</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const btn = this.querySelector('button');
+    btn.textContent = '⏳ Відправляємо...';
+    btn.disabled = true;
+    // Форма отправляет на formspree (бесплатный сбор заявок)
+    fetch('https://formspree.io/f/xqapbgla', {
+      method: 'POST',
+      body: new FormData(this),
+      headers: {'Accept': 'application/json'}
+    }).then(r => r.json()).then(d => {
+      document.getElementById('leadForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }).catch(() => {
+      btn.textContent = '📩 Відправити заявку';
+      btn.disabled = false;
+      alert('Помилка. Спробуйте зателефонувати: +380973058344');
+    });
+  });
+  // маска телефона
+  document.querySelector('input[name="phone"]').addEventListener('input', function(){
+    let x = this.value.replace(/\D/g,'').substring(0,12);
+    if(!x.startsWith('380')) x='380'+x;
+    let m = x.match(/^(\d{3})(\d{0,2})(\d{0,3})(\d{0,2})(\d{0,2})/);
+    if(m) this.value = '+'+m[1]+(m[2]?' ('+m[2]+') ':'')+(m[3]?m[3]:'')+(m[4]?'-'+m[4]:'')+(m[5]?'-'+m[5]:'');
+  });
+</script>
+
+</body>
+</html>
